@@ -11,7 +11,7 @@ import time
 import os
 import scratch_ip
 
-def send_mail(usr='1459032556@qq.com', pwd='tnyoawashxvfheic', smtp = 'smtp.qq.com', smtp_port = 587,to_addr = ['1459032556@qq.com'],text='Hello'):
+def send_mail(usr='xxxxxxx@xxxx.com', pwd='xxxxxxxx', smtp = 'smtp.qq.com', smtp_port = 587,to_addr = ['xxxxxxx@xxxx.com'],text='Hello'):
     mail = Mail(usr,pwd,smtp,smtp_port)
     text_type_dict_list=[{'text':'Hello,dear!','type':'plain'}]
     text_type_dict_list[0]['text'] = text
