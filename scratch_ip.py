@@ -16,6 +16,7 @@ def get_ip():
     try:
         browser.baidu(key)
     except Exception as e:
+        browser.quit()
         return
     page = browser.return_page(done_xpath,'utf8')
     browser.quit()
