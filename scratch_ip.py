@@ -13,7 +13,11 @@ def get_ip():
     browser = SePhBrowser()
     key = u'IP地址'
     done_xpath = '//span[@class= "c-gap-right"]'
-    browser.baidu(key)
+    try:
+        browser.baidu(key)
+    except Exception as e:
+        print e
+        return
     page = browser.return_page(done_xpath,'utf8')
     browser.quit()
 
